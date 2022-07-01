@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS buổi 7-8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container py-5">
+    <p>Nhập số n:</p>
+    <input type="number" class="form-control w-25" id="soN" />
+    <button class="btn btn-primary mt-2" id="btnThemSo">Thêm số</button>
+    <div class="alert alert-warning mt-2" id="hienThiMang"></div>
+
+    <hr />
+    <br />
+    <br />
+    <h3>Bài 1: tổng các số nguyên dương trong mảng</h3>
+    <div class="form-group">
+      <button class="btn btn-primary" id="btnTinhTong">Tính tổng</button>
+    </div>
+    <div class="alert alert-warning" id="ketQua_b1"></div>
+
+    <hr />
+    <br />
+    <br />
+    <h3>Bài 2: Đếm có bao nhiêu số dương trong mảng.</h3>
+    <div class="form-group">
+      <button class="btn btn-primary" id="btnSoDuong">Đếm số dương</button>
+    </div>
+    <div class="alert alert-warning" id="ketQua_b2"></div>
+
+    <hr />
+    <br />
+    <br />
+    <h3>Bài 3: Tìm số nhỏ nhất trong mảng.</h3>
+    <div class="form-group">
+      <button class="btn btn-primary" id="btnSoNhoNhat">Tìm số nhỏ nhất</button>
+    </div>
+    <div class="alert alert-warning" id="ketQua_b3"></div>
+
+    <hr />
+    <br />
+    <br />
+    <h3>Bài 4: Tìm số dương nhỏ nhất trong mảng.</h3>
+    <div class="form-group">
+      <button class="btn btn-primary" id="btnSoDuongNhoNhat">
+        Tìm số dương nhỏ nhất
+      </button>
+    </div>
+    <div class="alert alert-warning" id="ketQua_b4"></div>
+
+    <hr />
+    <br />
+    <br />
+    <h3>
+      Bài 5: Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn
+      thì trả về -1.
+    </h3>
+    <div class="form-group">
+      <button class="btn btn-primary" id="btnSoChanCuoiCung">
+        Tìm số chẵn cuối cùng
+      </button>
+    </div>
+    <div class="alert alert-warning" id="ketQua_b5"></div>
+
+    <hr />
+    <br />
+    <br />
+    <h3>Bài 6: Đổi chỗ</h3>
+    <div class="form-group row container">
+      <input
+        type="number"
+        class="col-4 w-25 form-control"
+        placeholder="Nhập vị trí số 1"
+        id="viTri1"
+      />
+      <input
+        type="number"
+        class="col-4 w-25 form-control"
+        placeholder="Nhập vị trí số 2"
+        id="viTri2"
+      />
+    </div>
+    <button class="btn btn-primary" id="btnDoiCho">Đổi chỗ</button>
+    <div class="alert alert-warning" id="ketQua_b6"></div>
+
+    <hr />
+    <br />
+    <br />
+    <h3>Bài 7: Sắp xếp mảng theo thứ tự tăng dần.</h3>
+    <button class="btn btn-primary" id="btnSapXepTangDan">
+      Sắp xếp tăng dần
+    </button>
+    <div class="alert alert-warning" id="ketQua_b7"></div>
+
+    <hr />
+    <br />
+    <br />
+    <h3>
+      Bài 8: Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên
+      tố thì trả về -1
+    </h3>
+    <button class="btn btn-primary" id="btnSoNguyenTo">
+      Số nguyên tố đầu tiên
+    </button>
+    <div class="alert alert-warning" id="ketQua_b8"></div>
+
+    <hr />
+    <br />
+    <br />
+    <h3>
+      Bài 9: Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên
+      ?
+    </h3>
+    <div class="form-gourp">
+      <p>Nhập số N</p>
+      <input type="number" class="form-control w-25" id="nhapSo_9" />
+      <button class="btn btn-success mt-2" id="btnThemSo_9">Thêm số</button>
+      <div class="alert alert-danger mt-2" id="mangBai9"></div>
+    </div>
+
+    <button class="btn btn-primary" id="btnDemSoNguyen">Dếm số nguyên</button>
+    <div class="alert alert-warning mt-2" id="ketQua_b9"></div>
+
+    <h3>Bài 10: So sanh số lượng số âm và số dương xem nào nhiều hơn</h3>
+
+    <button class="btn btn-primary" id="btnDemSoAmDuong">
+      Dếm số âm dương
+    </button>
+    <div class="alert alert-warning mt-2" id="ketQua_b10"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
