@@ -1,1 +1,1 @@
-# BC32E_JS_Buoi_7-8
+# BC32E_Nguyễn Hoàng Lộc (Bài tập JS buổi 7-8)
